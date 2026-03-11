@@ -31,19 +31,15 @@ Libraries Used:
 import random
 import time
 from datetime import datetime
-
-# --- Configuration ---
 MACHINERY_ID = "Machine-001"
 SENSOR_READING_FREQUENCY_SEC = 5
-VIBRATION_THRESHOLD = 8.0  # Threshold for potential issue
-ALERT_COOLDOWN_SEC = 60 * 5  # Prevent repeated alerts within this time
+VIBRATION_THRESHOLD = 8.0  
+ALERT_COOLDOWN_SEC = 60 * 5  
 
-# --- Data Storage ---
 sensor_data = []
 maintenance_logs = []
 last_alert_time = None
 
-# --- Sensor Data Simulation ---
 def simulate_sensor_data(machine_id):
     """Simulates sensor readings for a given machine."""
     timestamp = datetime.now()
